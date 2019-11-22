@@ -84,7 +84,7 @@ public class DashboardFragment extends Fragment implements RadioGroup.OnCheckedC
 
 
                 studentlist.add(new Student(name, age, gender, address));
-                Toast.makeText(getActivity(),"Save", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity()," Data Save Successfully", Toast.LENGTH_SHORT).show();
 
 
             }

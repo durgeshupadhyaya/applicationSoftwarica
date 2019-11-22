@@ -2,6 +2,8 @@ package com.example.applicationsoftwarica;
 
 import android.os.Bundle;
 
+import com.example.applicationsoftwarica.Model.Student;
+import com.example.applicationsoftwarica.ui.dashboard.DashboardFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+
+        //Default value in Home
+        DashboardFragment.studentlist.add(new Student("Durga Pd Upadhyaya", "22", "Male", "Kathmandu"));
+
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
                 .build();
